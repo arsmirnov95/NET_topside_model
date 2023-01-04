@@ -30,4 +30,6 @@ The example and explanations are provided in the jupyter notebook
 * Kp index
 
 Date of last edit: 04/01/2023.
+
+
 Author: Artem Smirnov, GFZ Potsdam. In case of any questions, please feel free to reach out to me via email (asmirnov@gfz-potsdam.de).
