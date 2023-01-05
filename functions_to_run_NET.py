@@ -13,7 +13,7 @@ def Add_FFT(input_df: pd.DataFrame, feature_list:list, feature_lim:list, max_ord
     """
     Adds Fourier features for given input variables and given maximum FFT orders to the input dataframe.
 
-    :param input_df: np.ndarray
+    :param input_df: pd.DataFrame
     :param feature_list: list
     :param feature_lim: list. Values should be "int".
     :param max_order: int
