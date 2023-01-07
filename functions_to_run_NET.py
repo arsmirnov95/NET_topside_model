@@ -37,7 +37,7 @@ def Add_FFT(input_df: pd.DataFrame, feature_list:list, feature_lim:list, max_ord
 def prepare_input(GLat: np.ndarray, GLon: np.ndarray, MLat: np.ndarray, MLon: np.ndarray, MLT: np.ndarray, DOY: np.ndarray, 
                   SYMH: np.ndarray, P107: np.ndarray, Kp: np.ndarray) -> (np.ndarray, np.ndarray):
     """
-    Adds Fourier features for given input variables and given maximum FFT orders to the input dataframe.
+    Prepares the input arrays for the F2-peak and topside submodels.
 
     :params GLat, GLon, MLat, MLon, MLT, DOY, SYM-H, P10.7, Kp - of type np.ndarray
 
