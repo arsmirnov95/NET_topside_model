@@ -62,7 +62,7 @@ def prepare_input(GLat: np.ndarray, GLon: np.ndarray, MLat: np.ndarray, MLon: np
 
     # CONFIGURE THE PANDAS DATAFRAME FOR THE TOPSIDE:
     df_topside = pd.DataFrame(columns = ['GLat', 'GLon', 'toplat','toplon', 'MLat', 'MLon', 'MLT', 'DOY', 'SYM-H', 'P10.7', 'Kp'],
-                            data = np.column_stack((GLat, GLon, GLat, GLon, MLat, MLon, MLT, DOY, SYMH, P107, Kp))) # During the model training, toplat and toplon variables from RO files were used due to the fact that COSMIC profiles are not exactly vertical, but during the usual model we assume the vertical profiles and therefore toplat=GLat and toplon=GLon
+                            data = np.column_stack((GLat, GLon, GLat, GLon, MLat, MLon, MLT, DOY, SYMH, P107, Kp))) # During the model training, toplat and toplon variables from RO files were used due to the fact that COSMIC profiles are not exactly vertical, but during the usual model runs we assume the vertical profiles and therefore toplat=GLat and toplon=GLon
     
     #Adding Fourier features:
     df_topside_with_FFT = Add_FFT(df_topside, ['GLat','MLat'], [360,360], 2)
